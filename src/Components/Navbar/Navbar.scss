@@ -26,7 +26,8 @@
             cursor: pointer;
             padding: 10px;
             list-style: none;
-            @include md{
+
+            @include md {
                 font-size: default;
             }
 
@@ -47,8 +48,16 @@
             li {
                 list-style: none;
                 font-weight: 500;
+                height: 40px;
+                display: flex;
+                justify-content: center;
                 cursor: pointer;
                 padding: 10px;
+                border-radius: 30px;
+            }
+            li:hover{
+                background-color: rgba(0, 0, 0, 0.2);
+                color: #fff;
             }
         }
     }

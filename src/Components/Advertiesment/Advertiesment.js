@@ -9,7 +9,7 @@ const Adver = () => {
 				<h1>Save with our cheap car rental!</h1>
 				<p>
 					Top Airports. Local suppliers.{" "}
-					<p style={{ color: "red" }}>24/7</p> support.
+					<span style={{ color: "red" }}>24/7</span> support.
 				</p>
 			</div>
 			<div className="picture">

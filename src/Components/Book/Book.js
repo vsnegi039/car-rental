@@ -17,11 +17,16 @@ const book = () => {
 							<AiFillCar />
 						</div>
 						&nbsp;Select your car type&nbsp;
-						<h3 style={{ color: "#FF3615" }}>*</h3>
+						<p style={{ color: "#FF3615" }}>*</p>
 					</h3>
 					<select name="" id="">
 						<option value="1">Select your car type</option>
-						<option value="2"></option>
+						<option value="2">Audi A1 s-Line</option>
+						<option value="2">VW Golf 6</option>
+						<option value="2">Toyota Camry</option>
+						<option value="2">BMW 320 ModernLine</option>
+						<option value="2">Mercedes-Benz GLK</option>
+						<option value="2">VW Passat CC</option>
 					</select>
 				</div>
 				<div>
@@ -30,7 +35,7 @@ const book = () => {
 							<HiLocationMarker />
 						</div>
 						&nbsp;Pick-up location&nbsp;
-						<h3 style={{ color: "#FF3615" }}>*</h3>
+						<p style={{ color: "#FF3615" }}>*</p>
 					</h3>
 					<input type="text" placeholder="Pick-up location" />
 				</div>
@@ -40,7 +45,7 @@ const book = () => {
 							<HiLocationMarker />
 						</div>
 						&nbsp;Drop-of location&nbsp;
-						<h3 style={{ color: "#FF3615" }}>*</h3>
+						<p style={{ color: "#FF3615" }}>*</p>
 					</h3>
 					<input type="text" placeholder="Drop-of location" />
 				</div>
@@ -52,7 +57,7 @@ const book = () => {
 							<MdOutlineDateRange />
 						</div>
 						&nbsp;Pick-up&nbsp;
-						<h3 style={{ color: "#FF3615" }}>*</h3>
+						<p style={{ color: "#FF3615" }}>*</p>
 					</h3>
 					<input type="date" />
 				</div>
@@ -62,7 +67,7 @@ const book = () => {
 							<MdOutlineDateRange />
 						</div>
 						&nbsp;Drop-of&nbsp;
-						<h3 style={{ color: "#FF3615" }}>*</h3>
+						<p style={{ color: "#FF3615" }}>*</p>
 					</h3>
 					<input type="date" />
 				</div>

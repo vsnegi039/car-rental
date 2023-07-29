@@ -1,7 +1,6 @@
 import React from "react";
 import c1 from '../Assets/c1.jpg';
 import c2 from '../Assets/c2.jpg';
-import { AiOutlineDoubleRight } from "react-icons/ai";
 import { FaQuoteRight } from "react-icons/fa6";
 
 import './Review.scss';
@@ -33,8 +32,8 @@ const Review = () => {
 					<div style={{ display: "flex", marginTop: "25px" }}>
 						<img src={c1} alt="" />
 						<p className="vm">
-							<h4>Parry Hotter</h4>
-							<p>Belgrade</p>
+							<span style={{fontWeight:'bold'}}>Parry Hotter</span><br />
+							<span>Belgrade</span>
 						</p>
 						<div className="icon">
 							<FaQuoteRight />
@@ -52,8 +51,8 @@ const Review = () => {
 					<div style={{ display: "flex", marginTop: "25px" }}>
 						<img src={c2} alt="" />
 						<p className="vm">
-							<h4>Ron Rizzly</h4>
-							<p>Novi Sad</p>
+							<span style={{fontWeight:"bold"}}>Ron Rizzly</span><br />
+							<span>Novi Sad</span>
 						</p>
 						<div className="icon">
 							<FaQuoteRight />

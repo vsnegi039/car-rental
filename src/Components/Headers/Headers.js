@@ -11,7 +11,7 @@ export default function header() {
 			<div className="left">
 				<p style={{ fontWeight: 600 }}>Plan your trip now</p>
 				<h1 style={{ display: "flex" }}>
-					Save&nbsp;<h4 style={{ color: "#FF3615" }}>big</h4>{" "}
+					Save&nbsp;<p style={{ color: "#FF3615" }}>big</p>{" "}
 					&nbsp;with our{" "}
 				</h1>
 				<h1>car rental</h1>

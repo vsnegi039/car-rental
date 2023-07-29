@@ -29,6 +29,18 @@ function Vehicle_model() {
 		setTransmission("Manual");
 		setFuel("Gasoline");
 		setImg(aud);
+		document.getElementById("1").style.background = "#ff3615";
+		document.getElementById("1").style.color = "#fff";
+		document.getElementById("2").style.background = "#fff";
+		document.getElementById("2").style.color = "#000";
+		document.getElementById("3").style.background = "#fff";
+		document.getElementById("3").style.color = "#000";
+		document.getElementById("4").style.background = "#fff";
+		document.getElementById("4").style.color = "#000";
+		document.getElementById("5").style.background = "#fff";
+		document.getElementById("5").style.color = "#000";
+		document.getElementById("6").style.background = "#fff";
+		document.getElementById("6").style.color = "#000";
 	};
 
 	const golf = () => {
@@ -41,6 +53,18 @@ function Vehicle_model() {
 		setTransmission("Manual");
 		setFuel("Diesel");
 		setImg(gol);
+		document.getElementById("1").style.background = "#fff";
+		document.getElementById("1").style.color = "#000";
+		document.getElementById("2").style.background = "#ff3615";
+		document.getElementById("2").style.color = "#fff";
+		document.getElementById("3").style.background = "#fff";
+		document.getElementById("3").style.color = "#000";
+		document.getElementById("4").style.background = "#fff";
+		document.getElementById("4").style.color = "#000";
+		document.getElementById("5").style.background = "#fff";
+		document.getElementById("5").style.color = "#000";
+		document.getElementById("6").style.background = "#fff";
+		document.getElementById("6").style.color = "#000";
 	};
 
 	const toyota = () => {
@@ -53,6 +77,18 @@ function Vehicle_model() {
 		setTransmission("Automatic");
 		setFuel("Hybrid");
 		setImg(toy);
+		document.getElementById("1").style.background = "#fff";
+		document.getElementById("1").style.color = "#000";
+		document.getElementById("2").style.background = "#fff";
+		document.getElementById("2").style.color = "#000";
+		document.getElementById("3").style.background = "#ff3615";
+		document.getElementById("3").style.color = "#fff";
+		document.getElementById("4").style.background = "#fff";
+		document.getElementById("4").style.color = "#000";
+		document.getElementById("5").style.background = "#fff";
+		document.getElementById("5").style.color = "#000";
+		document.getElementById("6").style.background = "#fff";
+		document.getElementById("6").style.color = "#000";
 	};
 
 	const bmw = () => {
@@ -65,6 +101,18 @@ function Vehicle_model() {
 		setTransmission("Manual");
 		setFuel("Diesel");
 		setImg(bm);
+		document.getElementById("1").style.background = "#fff";
+		document.getElementById("1").style.color = "#000";
+		document.getElementById("2").style.background = "#fff";
+		document.getElementById("2").style.color = "#000";
+		document.getElementById("3").style.background = "#fff";
+		document.getElementById("3").style.color = "#000";
+		document.getElementById("4").style.background = "#ff3615";
+		document.getElementById("4").style.color = "#fff";
+		document.getElementById("5").style.background = "#fff";
+		document.getElementById("5").style.color = "#000";
+		document.getElementById("6").style.background = "#fff";
+		document.getElementById("6").style.color = "#000";
 	};
 
 	const mercedes = () => {
@@ -77,6 +125,18 @@ function Vehicle_model() {
 		setTransmission("Manual");
 		setFuel("Diesel");
 		setImg(merced);
+		document.getElementById("1").style.background = "#fff";
+		document.getElementById("1").style.color = "#000";
+		document.getElementById("2").style.background = "#fff";
+		document.getElementById("2").style.color = "#000";
+		document.getElementById("3").style.background = "#fff";
+		document.getElementById("3").style.color = "#000";
+		document.getElementById("4").style.background = "#fff";
+		document.getElementById("4").style.color = "#000";
+		document.getElementById("5").style.background = "#ff3615";
+		document.getElementById("5").style.color = "#fff";
+		document.getElementById("6").style.background = "#fff";
+		document.getElementById("6").style.color = "#000";
 	};
 
 	const passat = () => {
@@ -89,6 +149,25 @@ function Vehicle_model() {
 		setTransmission("Automatic");
 		setFuel("Gasoline");
 		setImg(pas);
+		document.getElementById("1").style.background = "#fff";
+		document.getElementById("1").style.color = "#000";
+		document.getElementById("2").style.background = "#fff";
+		document.getElementById("2").style.color = "#000";
+		document.getElementById("3").style.background = "#fff";
+		document.getElementById("3").style.color = "#000";
+		document.getElementById("4").style.background = "#fff";
+		document.getElementById("4").style.color = "#000";
+		document.getElementById("5").style.background = "#fff";
+		document.getElementById("5").style.color = "#000";
+		document.getElementById("6").style.background = "#ff3615";
+		document.getElementById("6").style.color = "#fff";
+	};
+	const toBook = () => {
+		window.scrollTo(0, 0);
+		window.scrollTo({
+			top: 500 - window.pageYOffset,
+			behavior: "smooth",
+		});
 	};
 
 	return (
@@ -104,16 +183,22 @@ function Vehicle_model() {
 			<div className="models">
 				<div className="car-names">
 					<ul className="left">
-						<li onClick={audi}>&nbsp;&nbsp;Audi A1 s-Line</li>
-						<li onClick={golf}>&nbsp;&nbsp;VW Golf 6</li>
-						<li onClick={toyota}>&nbsp;&nbsp;Toyota Camry</li>
-						<li className="bg" onClick={bmw}>
+						<li onClick={audi} id="1" style={{ background: "#ff3615",color:'#fff' }}>
+							&nbsp;&nbsp;Audi A1 s-Line
+						</li>
+						<li onClick={golf} id="2">
+							&nbsp;&nbsp;VW Golf 6
+						</li>
+						<li onClick={toyota} id="3">
+							&nbsp;&nbsp;Toyota Camry
+						</li>
+						<li className="bg" onClick={bmw} id="4">
 							&nbsp;&nbsp;BMW 320 ModernLine
 						</li>
-						<li className="bg" onClick={mercedes}>
+						<li className="bg" onClick={mercedes} id="5">
 							&nbsp;&nbsp;Mercedes-Benz GLK
 						</li>
-						<li className="bg" onClick={passat}>
+						<li className="bg" onClick={passat} id="6">
 							&nbsp;&nbsp;VW Passat CC
 						</li>
 					</ul>
@@ -162,7 +247,7 @@ function Vehicle_model() {
 							<div className="ri">{fuel}</div>
 						</li>
 					</ul>
-					<button>RESERVE NOW</button>
+					<button onClick={toBook}>RESERVE NOW</button>
 				</div>
 			</div>
 		</div>
