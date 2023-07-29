@@ -1,0 +1,40 @@
+@import "../../css-config/mixin.scss";
+
+.feature {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @include md {
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 150px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10px;
+        @include md{
+            flex-direction: row;
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 18pt;
+        }
+
+        .icon {
+            font-size: 30pt;
+            color: #ff3615;
+            padding: 40px;
+        }
+    }
+}

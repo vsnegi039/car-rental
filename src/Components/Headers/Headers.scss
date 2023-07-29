@@ -1,0 +1,54 @@
+@import '../../css-config/mixin.scss';
+
+.header {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+
+    @include xl {
+    padding-left: 15%;
+    padding-right: 15%;
+        height: 500px;
+        margin-top: 40px;
+    }
+
+    .left {
+        margin-top: 60px;
+
+        @include xl {
+            margin-top: 200px;
+        }
+
+        .buttons {
+            display: flex;
+
+            button {
+                height: 30px;
+                width: 120px;
+                color: white;
+                cursor: pointer;
+                @include md{
+                    height: 40px;
+                    width: 150px;
+                }
+            }
+        }
+    }
+    img{
+        position: absolute;
+        display: none;
+        @include md{
+            position: relative;
+            display: block;
+        }
+    }
+}
+
+.hm {
+    margin-top: 15px;
+}
+
+.vm {
+    margin-left: 15px;
+}

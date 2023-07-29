@@ -1,0 +1,28 @@
+.Contact {
+    display: flex;
+    margin-top: 180px;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    .company {
+        font-size: 11pt;
+    }
+    .subscription{
+        input {
+                height: 30px;
+                width: 200px;
+                border: none;
+            }
+                        button {
+                            height: 38px;
+                            background-color: #ff3615;
+                            color: white;
+                            width: 200px;
+                            border: none;
+                            margin-top: 15px;
+                            cursor: pointer;
+                        }
+    }
+}

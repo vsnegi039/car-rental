@@ -1,0 +1,85 @@
+@import "../../css-config/mixin.scss";
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 5;
+    padding-top: 15px;
+
+    @include xl {
+        height: 60px;
+        padding-left: 200px;
+        padding-right: 200px;
+        overflow: hidden;
+    }
+
+    .left ul {
+        display: flex;
+
+        li {
+            font-weight: 500;
+            font-size: 10pt;
+            cursor: pointer;
+            padding: 10px;
+            list-style: none;
+            @include md{
+                font-size: default;
+            }
+
+            img {
+                height: 45px;
+            }
+        }
+    }
+
+    .mid ul {
+        position: absolute;
+        display: none;
+
+        @include xl {
+            display: flex;
+            position: relative;
+
+            li {
+                list-style: none;
+                font-weight: 500;
+                cursor: pointer;
+                padding: 10px;
+            }
+        }
+    }
+
+    .right ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            margin-right: 10px;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 10px;
+            list-style: none;
+            position: absolute;
+            display: none;
+
+            @include xl {
+                position: relative;
+                display: block;
+            }
+
+            button {
+                background-color: #ff3615;
+                height: 35px;
+                width: 100px;
+                border-radius: 3px;
+                color: #fff;
+                border: hidden;
+                cursor: pointer;
+            }
+        }
+    }
+}

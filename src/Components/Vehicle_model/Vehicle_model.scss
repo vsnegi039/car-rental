@@ -1,0 +1,127 @@
+@import '../../css-config/mixin.scss';
+.vehicle-model {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 150px;
+
+    h2 {
+        font-weight: 500;
+    }
+
+    h1 {
+        font-weight: 700;
+    }
+
+    .f{
+        display: flex;
+        justify-content: center;
+        p {
+        margin-top: 10px;
+        width: 440px;
+        color: #818082;
+        }
+    }
+
+    .models {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        @include md{
+            flex-direction: row;
+        }
+
+        .left {
+            margin-top: 15px;
+            height: 400px;
+            width: 100%;
+            justify-content: center;
+            @include md{
+                margin-top: 0;
+            }
+
+            li {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                width: 200%;
+                font-weight: 700;
+                cursor: pointer;
+            }
+
+            li:hover {
+                background-color: #ff3615;
+                color: white;
+            }
+
+            .bg {
+                background: rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        img {
+            height: 200px;
+            width: 300px;
+            margin-top: -30px;
+            @include md{
+                height: 400px;
+                width: 600px;
+                margin-top: 0;
+            }
+        }
+
+        .right {
+            li {
+                border: 1px solid black;
+                display: flex;
+                height: 40px;
+                width: 250px;
+                padding-left: 20px;
+                align-items: center;
+
+                .bar {
+                    width: 1px;
+                    height: 20px;
+                    background-color: #000;
+                    font-weight: 400;
+                    position: absolute;
+                    margin-left: 110px;
+                }
+
+                .ri {
+                    position: absolute;
+                    margin-left: 140px;
+                }
+            }
+
+            #price {
+                font-size: 19px;
+                color: white;
+                background-color: #ff3615;
+                border: none;
+                justify-content: left;
+
+                b {
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+
+        }
+
+        button {
+            width: 250px;
+            height: 50px;
+            color: white;
+            background-color: #ff3615;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    }
+
+
+}
