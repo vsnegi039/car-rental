@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/car-rental/static/css/main.5bb8f1cb.css",
+    "main.css": "/car-rental/static/css/main.192be234.css",
     "main.js": "/car-rental/static/js/main.9076a674.js",
     "static/js/787.e778e39e.chunk.js": "/car-rental/static/js/787.e778e39e.chunk.js",
     "static/media/mercedes.png": "/car-rental/static/media/mercedes.020cf4bf783c3a657509.png",
@@ -13,12 +13,12 @@
     "static/media/passat.webp": "/car-rental/static/media/passat.9c19da832cbdd08cc98f.webp",
     "static/media/logo.jpg": "/car-rental/static/media/logo.dc4ef6dd5ea67f0f6f65.jpg",
     "index.html": "/car-rental/index.html",
-    "main.5bb8f1cb.css.map": "/car-rental/static/css/main.5bb8f1cb.css.map",
+    "main.192be234.css.map": "/car-rental/static/css/main.192be234.css.map",
     "main.9076a674.js.map": "/car-rental/static/js/main.9076a674.js.map",
     "787.e778e39e.chunk.js.map": "/car-rental/static/js/787.e778e39e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bb8f1cb.css",
+    "static/css/main.192be234.css",
     "static/js/main.9076a674.js"
   ]
 }
