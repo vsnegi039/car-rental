@@ -1,3 +1,5 @@
+@import "../../css-config/mixin.scss";
+
 .hm {
     margin-top: 15px;
 }
@@ -7,19 +9,41 @@
 }
 
 .Review {
-    margin-top: 180px;
+    width: 80%;
+    margin-top: 200px;
+    margin: 0 auto;
+    padding-top: 90px;
+
+    @include md {
+        width: 100%;
+        margin-top: 100px;
+    }
 
     .flex {
-        padding-left: 25%;
-        padding-right: 25%;
-        margin-top: 60px;
+        padding-left: 15%;
+        padding-right: 15%;
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
+
+        @include md {
+            flex-direction: row;
+            margin-top: 60px;
+            gap: 20px;
+        }
+        @include lg{
+            gap: 0;
+        }
 
         img {
             border-radius: 100%;
-            height: 55px;
-            width: 55px;
+            height: 65px;
+            width: 65px;
+
+            @include md {
+                height: 55px;
+                width: 55px;
+            }
         }
 
         .icon {
@@ -29,5 +53,46 @@
             font-size: 28pt;
             color: #ff3615;
         }
+    }
+}
+
+.comment {
+    display: flex;
+    width: 300px;
+    margin-top: 30px;
+
+    @include md {
+        margin-top: 0;
+    }
+}
+
+.user {
+    display: flex;
+    margin-top: 0;
+    margin-top: 10px;
+
+    @include md {
+        margin-top: 25px;
+    }
+}
+
+.sp {
+    width: 100%;
+}
+
+.ssp {
+    margin: 0 auto;
+    width: 100%;
+
+    @include md {
+        width: 47%;
+    }
+}
+
+.mrl {
+    margin-left: -70px;
+
+    @include md {
+        margin-left: 0;
     }
 }

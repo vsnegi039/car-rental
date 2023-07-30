@@ -58,11 +58,11 @@ function FAQ() {
 					<div className="ans">
 						Comparing rental car deals is important as it helps find
 						the best deals that fit your budget and requirements,
-						ensuring you <br /> get the most value for your money. By
+						ensuring you get the most value for your money. By
 						comparing more options, you can find deals that offer
-						low prices, additional services, <br /> or better car models.
+						low prices, additional services, or better car models.
 						You can find car rental deals by researching online and
-						comparing prices from different rental <br /> companies.
+						comparing prices from different rental companies.
 					</div>
 				)}
 				<div className="ques" onClick={handleToggle2}>
@@ -76,7 +76,7 @@ function FAQ() {
 					comparing prices from different rental companies. Websites
 					such as Expedia, Kayak, and Travelocity allow you to compare
 					prices and view available rental options. It is also
-					recommended to <br /> sign up for email newsletters and follow
+					recommended to sign up for email newsletters and follow
 					rental car companies on social media to be informed of any
 					special deals and promotions.
 				</div>
@@ -93,7 +93,7 @@ function FAQ() {
 					to compare prices from multiple rental car companies. Look
 					for discount codes and coupons: Search for discount codes
 					and coupons that you can use to lower the rental price.
-					Renting <br /> from an off-airport location can sometimes result in
+					Renting from an off-airport location can sometimes result in
 					lower prices.
 				</div>
 			</div>

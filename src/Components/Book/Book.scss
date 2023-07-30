@@ -1,18 +1,25 @@
 @import "../../css-config/mixin.scss";
 
 .book {
+    max-width: 70%;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 50px;
 
+    @include mm{
+        max-width: 60%;
+    }
+
     @include md {
+        max-width: 100%;
         padding-left: 15%;
         padding-right: 18%;
-        padding-top: 120px;
+        padding-top: 145px;
     }
 
     h1{
-        width: 100%;
+        max-width: 100%;
         margin-left: 20px;
         padding-bottom: 10px;
     }
@@ -39,23 +46,34 @@
         }
 
         select {
-            height: 38px;
+            min-height: 38px;
             width: 175px;
             margin-left: 20px;
             border: hidden;
         }
 
         input {
-            height: 38px;
+            min-height: 38px;
             width: 175px;
             border: hidden;
             margin-left: 24px;
+            margin-bottom: 10px;
+            @include md{
+                margin-bottom: 0;
+            }
         }
 
         button {
-            width: 300px;
+            margin-top: 10px;
+            width: 170px;
             height: 40px;
-            margin-right: -125px;
+            margin-left: 25px;
+            @include lg {
+                margin-top: 0;
+                width: 300px;
+                margin-right: -125px;
+                margin-left: 0px;
+            }
         }
     }
 
@@ -63,4 +81,11 @@
 
 option{
     height: 40px;
+}
+
+.g{
+    margin-top: 10px;
+    @include lg{
+        margin-top: 0;
+    }
 }

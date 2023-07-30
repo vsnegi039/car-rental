@@ -1,28 +1,61 @@
+@import '../../css-config/mixin.scss';
+
 .Contact {
     display: flex;
-    margin-top: 180px;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-top: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
     justify-content: space-between;
     margin-bottom: 80px;
+    flex-wrap: wrap;
+
+    @include md {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 180px;
+    }
 
     .company {
         font-size: 11pt;
+        width: 230px;
+
+        @include md {
+            padding-left: 0;
+            width: 198px;
+        }
     }
-    .subscription{
+
+    .subscription {
         input {
-                height: 30px;
-                width: 200px;
-                border: none;
-            }
-                        button {
-                            height: 38px;
-                            background-color: #ff3615;
-                            color: white;
-                            width: 200px;
-                            border: none;
-                            margin-top: 15px;
-                            cursor: pointer;
-                        }
+            height: 30px;
+            width: 200px;
+            border: none;
+        }
+
+        button {
+            height: 38px;
+            background-color: #ff3615;
+            color: white;
+            width: 200px;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+    }
+}
+
+.mt {
+    margin-top: 10px;
+
+    @include md {
+        margin-top: 33px;
+    }
+}
+
+.mar {
+    margin-top: 20px;
+
+    @include md {
+        margin-top: 0;
     }
 }

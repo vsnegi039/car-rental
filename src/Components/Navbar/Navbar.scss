@@ -1,6 +1,7 @@
 @import "../../css-config/mixin.scss";
 
 .nav {
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,32 +34,48 @@
 
             img {
                 height: 45px;
+                margin-top: -5px;
+                @include lg{
+                    margin-top: 0;
+                }
             }
         }
     }
 
     .mid ul {
         position: absolute;
-        display: none;
 
         @include xl {
             display: flex;
             position: relative;
+        }
 
-            li {
-                list-style: none;
-                font-weight: 500;
-                height: 40px;
-                display: flex;
-                justify-content: center;
-                cursor: pointer;
-                padding: 10px;
+        li {
+            margin-left: -475px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-bottom: 2px solid white;
+            border-radius: 0;
+            list-style: none;
+            font-weight: 500;
+            display: flex;
+            height: 60px;
+            justify-content: center;
+            cursor: pointer;
+            padding: 10px;
+            top: 0;
+            @include lg{
+                margin-left: 0;
                 border-radius: 30px;
+                width: default;
+                height: 40px;
+                border: none;
+                background-color: white;
             }
-            li:hover{
-                background-color: rgba(0, 0, 0, 0.2);
-                color: #fff;
-            }
+        }
+
+        li:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+            color: #fff;
         }
     }
 
@@ -90,5 +107,29 @@
                 cursor: pointer;
             }
         }
+    }
+}
+
+.burger {
+    font-size: 22pt;
+    margin-top: -25px;
+    margin-right: 15px;
+
+    @include lg {
+        display: none;
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .mid{
+        margin-top: -90px;
+    }
+    .mid ul li{
+        width: 100vh;
+        height: 100vh;
+        color: white;
+        align-items: center;
+        justify-content: center;
     }
 }

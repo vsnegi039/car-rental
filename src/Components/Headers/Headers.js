@@ -10,11 +10,12 @@ export default function header() {
 		<div className="header">
 			<div className="left">
 				<p style={{ fontWeight: 600 }}>Plan your trip now</p>
-				<h1 style={{ display: "flex" }}>
-					Save&nbsp;<p style={{ color: "#FF3615" }}>big</p>{" "}
-					&nbsp;with our{" "}
+				<h1 style={{ display: "inline",maxWidth:'80px' }}>
+					Save&nbsp;<span style={{ color: "#FF3615" }}>big</span>{" "}
+					&nbsp;with{" "}
 				</h1>
-				<h1>car rental</h1>
+				<h1 style={{display:'inline'}}>our </h1>
+				<h1 style={{display:'inline'}}>car rental</h1>
 				<p className="hm" style={{ fontSize: "10pt" }}>
 					Rent the car of your dreams, unbeatable prices, unlimited
 					miles, flexble pick-up option and much more

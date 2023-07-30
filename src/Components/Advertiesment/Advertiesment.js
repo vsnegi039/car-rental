@@ -16,7 +16,7 @@ const Adver = () => {
 				<img src={adver} alt="" />
 			</div>
 			<div className="row why">
-				<div style={{ width: "50%" }}>
+				<div className="widh">
 					<p>
 						<b style={{ color: "black", fontSize: "14pt" }}>
 							Why Choose Us
@@ -34,7 +34,7 @@ const Adver = () => {
 					</p>
 					<button className="hm">Find Details</button>
 				</div>
-				<div style={{ marginLeft: "150px" }}>
+				<div className="leftmar">
 					<b>Cross Country Drive</b>
 					<p>
 						Take your driving experience to the next level with our

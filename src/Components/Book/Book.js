@@ -16,7 +16,7 @@ const book = () => {
 						<div className="icon">
 							<AiFillCar />
 						</div>
-						&nbsp;Select your car type&nbsp;
+						&nbsp;<span>Select your car type</span>&nbsp;
 						<p style={{ color: "#FF3615" }}>*</p>
 					</h3>
 					<select name="" id="">
@@ -30,7 +30,7 @@ const book = () => {
 					</select>
 				</div>
 				<div>
-					<h3>
+					<h3 className="g">
 						<div className="icon">
 							<HiLocationMarker />
 						</div>

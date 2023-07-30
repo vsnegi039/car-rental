@@ -13,26 +13,32 @@ const Review = () => {
 					<b>Reviewed by People</b>
 				</p>
 				<h2 className="hm">Client's Testimonials</h2>
-				<p className="hm">
-					Discover the positive impact we have made on the our clients
-					by reading through their <br /> testimonials. Our client
-					have experienced our service and results, and they are eager
-					to share <br /> their positive experience with you.
-				</p>
+				<div className="sp">
+					<p className="hm ssp">
+						Discover the positive impact we have made on the our
+						clients by reading through their testimonials. Our
+						client have experienced our service and results, and
+						they are eager to share their positive experience with
+						you.
+					</p>
+				</div>
 			</div>
 			<div className="flex">
-				<div>
+				<div className="mrl">
 					<p>
 						<b className="comment">
-							We rented a car from this website and <br /> had an
-							amazing experience! The <br /> booking was easy and
-							the rental rates <br /> were very affordable. "
+							We rented a car from this website and had an amazing
+							experience! The booking was easy and the rental
+							rates were very affordable. "
 						</b>
 					</p>
-					<div style={{ display: "flex", marginTop: "25px" }}>
+					<div className="user">
 						<img src={c1} alt="" />
 						<p className="vm">
-							<span style={{fontWeight:'bold'}}>Parry Hotter</span><br />
+							<span style={{ fontWeight: "bold" }}>
+								Parry Hotter
+							</span>
+							<br />
 							<span>Belgrade</span>
 						</p>
 						<div className="icon">
@@ -40,18 +46,21 @@ const Review = () => {
 						</div>
 					</div>
 				</div>
-				<div>
+				<div className="mrl">
 					<p>
 						<b className="comment">
-							The car was in great condition and <br /> made our
-							trip even better. Highly <br /> recommended for this
-							car rental <br /> website!"
+							The car was in great condition and made our trip
+							even better. Highly recommended for this car rental
+							website!"
 						</b>
 					</p>
-					<div style={{ display: "flex", marginTop: "25px" }}>
+					<div className="user">
 						<img src={c2} alt="" />
 						<p className="vm">
-							<span style={{fontWeight:"bold"}}>Ron Rizzly</span><br />
+							<span style={{ fontWeight: "bold" }}>
+								Ron Rizzly
+							</span>
+							<br />
 							<span>Novi Sad</span>
 						</p>
 						<div className="icon">

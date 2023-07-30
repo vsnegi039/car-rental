@@ -1,11 +1,19 @@
+@import '../../css-config/mixin.scss';
 .FAQ {
-    width: 100%;
-    margin-top: 150px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    @include md
+    {width: 100%;
+    margin-top: 150px;}
 
     .content {
-        width: 60%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
+        @include md{
+            width: 60%;
+        }
 
         .QQQ {
             color: #818082;
@@ -38,10 +46,13 @@
 
         .ans {
             color: #818082;
-            width: 100%;
+            width: 90%;
             text-align: left;
             margin-left: 30px;
             animation: open 1s ease;
+            @include md{
+                width: 95%;
+            }
         }
 
         .hide {

@@ -1,9 +1,14 @@
 @import '../../css-config/mixin.scss';
 .vehicle-model {
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    width: 80%;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 50px;
+    margin: 0 auto;
+    @include md{
+        width: 100%;
+        padding-top: 200px;
+    }
 
     h2 {
         font-weight: 500;
@@ -24,32 +29,42 @@
     }
 
     .models {
+        margin-top: 15px;
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
         width: 80%;
         margin: 0 auto;
-        @include md{
+        @include lg{
             flex-direction: row;
+            justify-content: space-between;
+            margin-top: 0;
         }
 
         .left {
             margin-top: 15px;
             height: 400px;
-            width: 100%;
-            justify-content: center;
+            max-width: 100%;
             @include md{
                 margin-top: 0;
+                margin-left: 170px;
             }
-
+            @include lg{
+                margin-left: 0;
+            }
             li {
-                height: 50px;
+                height: 40px;
                 display: flex;
                 align-items: center;
                 margin-top: 10px;
-                width: 200%;
+                max-width: 300px;
+                min-width: 180px;
                 font-weight: 700;
                 cursor: pointer;
+                text-align: left;
+                @include md{
+                    height: 50px;
+                    width: 200%;
+                }
             }
 
             li:hover {
@@ -65,22 +80,37 @@
         img {
             height: 200px;
             width: 300px;
-            margin-top: -30px;
+            margin-top: -80px;
+            margin-left: -20px;
             @include md{
+                margin-top: -40px;
+            }
+            @include lg{
                 height: 400px;
                 width: 600px;
+                margin-left: 0;
                 margin-top: 0;
             }
         }
 
         .right {
+            margin-left: -20px;
+            @include md{
+                margin-left: 190px;
+            }
+            @include lg{
+                margin-left: 0;
+            }
             li {
                 border: 1px solid black;
                 display: flex;
                 height: 40px;
-                width: 250px;
+                width: 300px;
                 padding-left: 20px;
                 align-items: center;
+                @include md{
+                    width: 250px;
+                }
 
                 .bar {
                     width: 1px;

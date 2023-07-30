@@ -4,13 +4,13 @@ import './Contact.scss';
 const Contact = () => {
     return (
 		<div className="Contact">
-			<div>
+			<div className="mar">
 				<h3>CAR Rental</h3>
-				<p style={{marginTop:'33px'}}>
+				<p className="mt">
 					We offer a big range of vehicles for <br /> all your driving needs.
 					We have the <br /> perfect car to meet your needs.
 				</p>
-				<div style={{ display: "flex",marginTop:'33px'}}>
+				<div className="mt" style={{ display: "flex"}}>
 					<b>I</b>
 					<b className="vm">(123)-456-789</b>
 				</div>
@@ -19,7 +19,7 @@ const Contact = () => {
 					<b className="vm">carrental@gmail.com</b>
 				</div>
 			</div>
-            <div className="company">
+            <div className="company mar">
                 <h3>COMPANY</h3>
                 <p className="hm">New York</p>
                 <p className="hm">Careers</p>
@@ -27,13 +27,13 @@ const Contact = () => {
                 <p className="hm">Blog</p>
                 <p className="hm">How we work</p>
             </div>
-            <div>
+            <div className="mar">
                 <h3>Working Hours</h3>
                 <p className="hm">Mon - Fri: 9:00AM - 9:00PM</p>
                 <p className="hm">Sat: 9:00AM - 19:00PM</p>
                 <p className="hm">Sun: Closed</p>
             </div>
-            <div className="subscription">
+            <div className="subscription mar">
                 <h3 className="hm">Subscription</h3>
                 <p className="hm">Subscribe your Email address for <br /> latest news & updates.</p>
                 <input type="text" placeholder="Enter Email Address" className="hm" /><br />
